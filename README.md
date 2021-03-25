@@ -15,5 +15,6 @@ for Eg. to install python 3 i'm using ```pacman``` (my package manager).
 - ```source environment_name/bin/activate```
 - ```pip3 install -r requirements.txt```
 - ```python3 run.py```
+- ```python3 middleWare.py``` In another terminal
 
 ###### ```Note: This project has not fully tested yet please do not use it in production XD```
