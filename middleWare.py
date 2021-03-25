@@ -21,6 +21,12 @@ def failure_handling(packet):
     if connection():
         t1 = threading.Thread(target=publish_data_to_server, name='t1') #Thread will do normal publishing
         t2 = threading.Thread(target=publish_unpublish_data, name='t2') #Thread will publish unpublish data after every 5 secs
+        t1.start()
+        t2.start()
+  
+        # wait until all threads finish
+        t1.join()
+        t2.join()
     else:
         publish_data_to_server()    
 
